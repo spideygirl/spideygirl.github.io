@@ -1,0 +1,593 @@
+
+/*404 Error Page Details */
+
+#error-page{				/*sets the features and details for solely the 404 page */
+	background-color:#374a5c;
+}
+.four-body{
+	display:flex; /*lays out material horizontally */
+	flex-direction: column; /*stacks the items */
+	align-items: center; /*puts items horizontally in the center*/
+	justify-content:center; /*puts items vertically in the center */
+	text-align: center;
+	min-height: 100vh;	/*takes up 100% of the viewport */
+}
+.error-content{
+	display:flex;
+	align-items:center; /*aligns both the 404 number and the message vertically */
+	gap: 50px; /*puts a space between number and message */
+	text-align:center;
+	flex-direction:column;
+}
+
+.error-number{
+	font-family:Coppperplate;
+	font-size:80px;
+	font-weight:bold;
+	color:whitesmoke;
+	margin:0;
+
+}
+
+.error-message{
+	padding-top:10px;
+	color:whitesmoke;
+	font-size:35px;
+	font-family:Coppperplate;
+	margin:0;
+	max-width:1400px;
+	text-align:center;
+}
+
+/*make a home button with functioning link */
+.home-button{
+	padding: 20px 25px;
+     margin-top:30px;    /*space between content */
+     font-size:20px;
+     border-radius:5px;    /*radius for border of button*/
+     background-color:#71989B;
+     color:whitesmoke;
+
+}
+
+/*Home page Details */
+
+#home-page{
+	background-color:#374a5c;
+	padding:0;
+	margin:0;
+}
+
+.home-header{
+	background-image:url("Homepageheader.jpg");
+	background-size: cover; /*lets image cover the entire width of screen */
+    background-repeat: no-repeat; /*prevent image from tiling */
+    position:static;		/*keeps image in place */
+    height:300px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;		/*gets rid of underline */
+
+   
+}
+.homepage-title h1{
+	text-decoration:none;
+	color:whitesmoke;
+}
+
+.homepage-title a:visited{
+	color:whitesmoke;
+	text-decoration:none;
+
+}
+
+.homepage-title a:hover{
+	color:slategray;		/*Changes color when hovered */
+	text-decoration:none;
+
+}
+
+/*title of page */
+.home-header h1{
+	text-align:center;
+	padding:20px;
+	font-family:Copperplate;
+	font-size:60px;
+	margin:0;
+	color:whitesmoke;
+}
+
+.page-container{
+	display:flex;
+	justify-content:center;
+	gap:20px;
+	padding:50px;
+}
+
+/*make the links like buttons */
+
+.homepage-buttons{
+	width:40%;
+	height:300px;
+	color:whitesmoke;
+	font-weight:bold;
+	display:flex;
+	align-items:center;				/*places items in the center */
+	justify-content:center;
+	text-align:center;
+	border-radius:10px;
+	position:relative;
+	overflow:hidden; /*cuts of the content that spills out of the button */
+	padding:15px;
+	text-decoration:none; /*removes underline */
+
+}
+
+.homepage-buttons:hover{
+	transform:scale(1.05);		/*enlarges the picture by 1.05 when hovered over (very cool) */
+}
+
+.button-message h2{
+	border-radius:10px;
+	font-size:25px;
+	margin-bottom:10px;
+	font-family:"Courier New", Courier, Monospace;
+
+
+}
+
+/*text on buttons */
+.button-message p{
+	font-size:15px;
+	font-weight:normal;
+	width:80%;
+	opacity:0.9; /*makes text slightly opaque */
+}
+
+#button1{
+	background-image: url("Homepagepic1.jpg");		/*sets picture as background*/
+	background-size:cover;							/*picture covers the entire area */
+	background-position:center;						/*places picture in center */
+	background-repeat:no-repeat;					/*prevents picture from repeating */
+}
+#button2{
+	background: url("Homepagepic2.jpg");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+#button3{
+	background: url("Homepagepic3.jpg");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+
+}
+
+.homesection{
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	gap:40px;
+	padding:20px;
+	max-width:100%;
+	margin:auto; /*centers section */
+}
+
+/*editing dimensions and position of video */
+
+.homesection video{
+    max-height: 1150px;
+    max-width: 410px;
+    display:block;
+}
+
+.homeinfo-message{
+        color:whitesmoke;
+        max-width: 50%;   /*fixing the max width to make it easier to read */
+        font-family:"Courier New", Courier, Monospace;
+        font-size:20px;
+        text-align:left;
+        padding-left:180px; /*forcefully pushing the text to the right */
+        }
+
+.homeinfo-message a{
+	color:whitesmoke;
+	font-weight:bold;
+}
+
+.homeinfo-message a:hover{
+	color:whitesmoke;
+}
+/*footer used on all pages */
+.homefooter{
+	padding:20px;
+	position:relative;
+	text-align:center;
+	color:whitesmoke;
+	font-family:"Courier New", Courier, Monospace;
+}
+
+.homefooter h3{
+	font-size: 20px;
+	margin-bottom:10px;
+}
+
+/*editing icons in footer */
+.social-icons{
+	display:flex;
+	justify-content:center;
+	gap:20px;
+}
+
+.social-icons a img{
+	width:40px;
+	height:auto;
+}
+
+/*Designs page Details*/
+#designs-page{
+	background-color:#374a5c;
+	padding:0;
+	margin:0;
+}
+
+/*menu bar */
+.navigation{
+	display:flex;
+	justify-content:center;
+	padding: 10px 20px;
+	margin-top:200px;			/*forefully places navigation bar under title */
+	position:absolute;
+	width:100%;
+}
+.navigation ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	display:flex;
+	gap:20px;
+	align-items:center;
+	justify-content:center;
+	width:100%;
+}
+
+.navigation li{
+	list-style:none;
+	
+}
+
+.navigation li a{			/*nav bar customizations */
+	display:block;
+	padding:10px 15px;
+	font-size:22px;
+	border-radius:5px;
+	color:whitesmoke;
+	text-align:left;
+	text-decoration:none;
+	font-family:Copperplate;
+}
+
+.navigation li a:hover{
+	background-color:slategray;
+	color:whitesmoke;
+	opacity:0.7;
+}
+
+.designs-container{
+	display:flex;
+	justify-content:center;
+	width:100%;
+}
+
+.designs-gallery{
+	display: flex;
+     	justify-content: center;
+     	align-items:center;
+     	gap:150px;
+     	padding-top:30px;
+     	text-align:center;
+     	margin:auto;
+     	width:80%;
+     	font-family:"Courier New", Courier, Monospace;
+     	color:whitesmoke;
+
+}
+
+/*editing the list on the webpage */
+.designs-gallery ul{
+	display:flex;
+	flex-direction:column;
+	align-items:flex-start;
+	padding:20px;
+	list-style-position:inside;
+	font-size:20px;
+}
+
+.designs-gallery div{
+          display:flex;
+          flex-direction:column;    /*puts them in columns */
+          align-items: center;
+          max-width:500px;
+          word-wrap:break-word;
+        }
+
+.designs-gallery img{
+          width: 400px;   /*image dimensions */
+          height: 380px;
+          border-radius: 10px;
+          margin-bottom:10px;
+          margin-top:10px;
+        }
+ .designs-gallery img:hover{
+ 	 transform:scale(1.1);		/*enlarges the picture by 1.05 when hovered over (very cool) */
+
+ }
+
+ .designs-gallery h3{
+ 	font-size:20px;
+	font-family:Copperplate;
+	color:whitesmoke;
+	text-align:center;
+ }
+
+ /*Mechanics Page Details */
+ #mechanics-page{
+ 	background-color:#374a5c;
+	padding:0;
+	margin:0;
+ }
+
+ .mechsection{
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /*prevents excess space */
+        margin:auto;
+        gap: 20px;
+        padding:5px;
+        max-width:90%;
+        flex-direction: row-reverse;
+      
+.mechsection img{
+    height: 35%;
+    max-width: 40%;
+    display:block;
+    flex-grow:1; /*Image distributes space evenly */
+}
+
+.mech-content{
+        max-width: 50%;   /*fixing the max width to make it easier to read */
+        flex-grow:1;
+        display:flex;
+        flex-direction: column;
+        color:whitesmoke;
+        font-size:20px;
+        font-family:"Courier New", Courier, Monospace;
+        font-weight:normal;
+        word-wrap:break-word;
+        overflow-wrap:break-word;
+      }
+ }
+
+.mechsection video{
+    display:block;
+    flex-grow:1; /*Image distributes space evenly */
+    height:80%;
+}
+
+.homeinfo-message h3{
+	text-align:center;
+	font-size:25px;
+	font-family:Copperplate;
+	color:whitesmoke;
+}
+
+.mech-content h3{
+	text-align:center;
+	font-size:25px;
+	font-family:Copperplate;
+	color:whitesmoke;
+}
+
+
+/*Safety Page Details (this page took me forever ;-; )*/
+#safety-page{
+	background-color:#374a5c;
+	margin:0;
+}
+
+.safety-content{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	gap:20px;
+}
+
+.safety-text1{
+	font-family:"Courier New", Courier, Monospace;
+	font-size:13px;
+	margin:0 auto;
+	padding:10px 10px;
+	align-text:center;
+	color:whitesmoke;
+	width:fit-content;
+}
+
+.text-image h3{
+	font-size:18px;
+	font-family:Copperplate;
+	color:whitesmoke;
+}
+
+.image-container{
+	width:40%;
+	height:400px;
+	color:whitesmoke;
+	display:flex;
+	align-items:center;				/*places items in the center */
+	justify-content:center;
+	text-align:center;
+	border-radius:10px;
+	position:relative;
+	overflow:hidden; /*cuts of the content that spills out of the button */
+	margin:15px;
+	text-decoration:none; /*removes underline */
+	font-family:"Courier New", Courier, Monospace;
+	font-weight: bold;
+
+}
+	
+.image-container img{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	display:block;
+	transition:opacity 0.4s ease;		/*makes a smooth transition for the text to be shown */
+	opacity:1;
+
+}
+.image-container:hover img{
+	opacity:0.3;			/*darkens image slightly to make text easier to read */
+	transform:scale(2);		/*enlarges the picture by 2 when hovered over (very cool) */
+
+}
+
+.text-image{
+	font-size:17px;
+	width:80%;
+	position:absolute;
+	padding:10px 15px;
+	border-radius:5px;
+	text-align:center;
+	color:whitesmoke;
+	font-family:"Courier New", Courier, Monospace;
+	opacity:0;						/*hides text until image is hovered over */
+	word-wrap:break-word;
+    overflow-wrap:break-word;		/*wraps text to prevent flowing off the page */
+    font-weight: bold;
+
+}
+
+/*container follows same format as the image container but changes the dimension of the block */
+
+.rec-container{
+	width:80%;
+	height:270px;
+	margin:20px auto; /*centers container and adds space */
+	border-radius:5px;
+	overflow:hidden;  /*similar to a zoomed in image */
+	position:relative;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.rec-container img{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	display:block;
+	transition:opacity 0.4s ease;
+	opacity:1;
+}
+.rec-container .text-image{
+	font-size:17px;
+	width:80%;
+	position:absolute;
+	padding:10px 15px;
+	border-radius:5px;
+	text-align:center;
+	color:whitesmoke;
+	font-family:"Courier New", Courier, Monospace;
+	opacity:0;						/*hides text until image is hovered over */
+	word-wrap:break-word;
+    overflow-wrap:break-word;		/*wraps text to prevent flowing off the page */
+    font-weight: bold;
+
+
+}
+
+.rec-container:hover img{
+	opacity:0.3;
+	transform: scale(1.2);
+}
+
+.rec-container:hover .text-image{
+	opacity:1;						/*makes the text visible when hovered over image */
+}
+
+
+.image-container:hover .text-image{
+	opacity:1;				/*makes the text visible when hovered over image */
+}
+
+/*used same format as the home buttons */
+#safetypicone{
+	background: url("SafetyPic1.jpg");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+#safetypictwo{
+	background: url("SafetyPic2.jpg");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+/*References Page Details (follows similar code as home page + mechanics page) */
+#ref-page{
+	background-color:#374a5c;
+	margin:0;
+}
+
+
+.ref-container{
+	display:flex;
+	justify-content:space-between;
+	padding:20px;
+	gap:30px;
+	max-width:1000px;
+	width:100%;
+}
+
+.ref-video{
+	border-radius:10px;
+	padding:15px;
+	width:50%;
+}
+
+.references ul{
+	margin-top:390px;
+	text-align:center;
+	list-style-type:disc;
+	padding-left:100px;
+	color:whitesmoke;
+	font-family:"Courier New", Courier, Monospace;
+	font-size:23px;
+
+}
+
+.references li{
+	margin-bottom:10px;
+	color:whitesmoke;
+	font-family:"Courier New", Courier, Monospace;
+	font-size:23px;
+	font-weight:bold;
+}
+
+.references a{
+	text-decoration:underline;
+	color:whitesmoke;
+	font-weight:bold;
+
+}
+
+.references a:hover{
+	color:lightslategray;
+	text-decoration:none;
+	font-weight:bold;
+}
